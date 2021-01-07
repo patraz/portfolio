@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.nav {
+    height: 10vh;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav li{
+    margin: 0 50px;
+    list-style: none;
+}
+#left {
+    margin-left: auto;
+}
+
+
+.omnie {
+    text-align: center;
+}
+
+.omnie img {
+    height: 100%;
+}
