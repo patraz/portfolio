@@ -1,42 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
 body {
     margin: 0;
-}
-
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
+    color: whitesmoke;
+    font-family: 'Baloo Chettan 2';
+    height: 100%;
 }
 
 .container {
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 80vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 300;
 }
 
 .nav {
-    height: 10vh;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    background-color: #313642;
+    z-index: 300;
+    border-bottom: 1px solid #444950;
 }
-
-.nav ul{
+ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.nav li{
-    margin: 0 50px;
+li{
+    padding: 10px 50px;
+    margin: 20px;
     list-style: none;
+    background: #313642 ;
+    text-align: center;
+    cursor: pointer;
 }
+
 #left {
     margin-left: auto;
 }
 
+@media screen and (max-width: 1000px) {
+    li {
+        padding: 5px;
+        margin:0 40px;
+    }
+    #left {
+        margin-left: auto;
+    }
+
+}
+
+li:hover {
+    filter: brightness(150%);
+}
+
+#omnie {
+    background: radial-gradient(at top, #3e434e -20%, #20232b 90%);
+}
 
 .omnie {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .omnie {
+
+        word-wrap: normal;
+        font-size: 10px;
+    }
+
+    .omnie img {
+        height: 50%;
+        width: auto;
+    }
+}
+
+
+.projekty {
+    background: radial-gradient(at top, #353B44 -10%, #252932 60%);
+    border-top: 1px solid #444950;
+    flex-direction: column;
+}
+.green {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #39393a;
+    background: radial-gradient(at top, #272b31 -10%, #1b1f25 60%);
+}
+.zone {
+    margin: 15px;
+    justify-self: center;
+}
+
+.zone img {
+    height: 200px;
+    width: auto;
+}
+
+
+
+#kontakt {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background: radial-gradient(at top, #4F5762 -10%, #252932 60%);
+    border-top: 1px solid #444950;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+footer {
+    background-color: #1d2127;
+    border-top: 1px solid #1d1d1f;
+    color: #fff;
+    padding: 20px 0px;
     text-align: center;
 }
 
-.omnie img {
-    height: 100%;
+#textarea {
+    height: 20vh;
+    width: 50vw;
 }
