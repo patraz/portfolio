@@ -1,6 +1,6 @@
 const omnie = document.getElementById("omnie");
 const projekty = document.getElementById("projekty");
-const kontakt = document.getElementById('kontakt');
+const kontakt = document.querySelector('.form');
 const li = document.querySelector('li')
 
 
@@ -22,3 +22,4 @@ projektyBtn.addEventListener('click', () => {
 kontaktBtn.addEventListener('click', () => {
     kontakt.scrollIntoView();
 });
+

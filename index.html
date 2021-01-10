@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav container blue" id="nav">
-        <ul>
-            <li id='omniebtn'>O mnie</li>
-            <li id='projektybtn'>Projekty</li>
-            <li id='left' class='kontaktbtn'>Kontakt</li>
-        </ul>
-    </nav>
-    <div class="omnie container red" id="omnie">
-        <img src="./photos/harambe.jpg" ><br><h1>Hi, my name is Patryk
-            and I am The Developer you need.</h1>
-    </div>
-    <div class="projekty container" id="projekty">
-        <h1>Projekty</h1>
-        <div class="green">
-            <p><a class="zone" href=""><img src="./photos/back_gen.png"></a><br>Gradient Generator</p>
-            <p><a class="zone" href="https://patraz.github.io/adding-calc/"><img src="./photos/calc.png"></a><br>JavaScript Calculator</p>
-            <p><a class="zone" href="https://patraz.github.io/drink/"><img src="./photos/drink.png"></a><br>Drink generator</p>
-            <p><a class="zone" href="https://patraz.github.io/infinite-scroll/"><img src="./photos/infinite-scroll.png"></a><br>infinite-scroll</p>
+    <div class ="site">
+        <nav class="nav blue" id="nav">
+            <ul>
+                <li id='omniebtn'>O mnie</li>
+                <li id='projektybtn'>Projekty</li>
+                <li id='left' class='kontaktbtn'>Kontakt</li>
+            </ul>
+        </nav>
+        <div class="omnie container red" id="omnie">
+            <img src="./photos/harambe.jpg" ><br><h1>Hi, my name is Patryk
+                and I am The Developer you need.</h1>
         </div>
+        <div class="projekty container" id="projekty">
+            <h1>Projekty</h1>
+            <div class="green">
+                <span class = "pro"><a class="zone" href=""><img src="./photos/back_gen.png"></a><br><p>Gradient Generator</p></span>
+                <span class = "pro"><a class="zone" href="https://patraz.github.io/adding-calc/"><img src="./photos/calc.png"></a><br><p>JavaScript Calculator</p></span>
+                <span class = "pro"><a class="zone" href="https://patraz.github.io/drink/"><img src="./photos/drink.png"></a><br><p>Drink generator</p></span>
+                <span class = "pro"><a class="zone" href="https://patraz.github.io/infinite-scroll/"><img src="./photos/infinite-scroll.png"></a><br><p>infinite-scroll</p></span>
+            </div>
+        </div>
+        <div class ="form">
+            <header>NAPISZ DO MNIE!</header>
+            <form id="form" class="topBefore">
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="GO!">
+            </form>
+        </div>
+        <footer>Patryk P. 2021</footer>
     </div>
-    <footer>Patryk P. 2021</footer>
     <script src="script.js"></script>
 </body>
 </html>
