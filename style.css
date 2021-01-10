@@ -35,6 +35,7 @@ li{
   text-align: center;
   cursor: pointer;
   padding: 0 50px;
+  user-select: none;
 }
 
 #left {
