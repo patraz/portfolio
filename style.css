@@ -82,6 +82,7 @@ li:hover {
   #omnie img {
     width: 70vw;
     height: auto;
+    padding: 0;
   }
   #omnie h1 {
     padding: 0 15px;
