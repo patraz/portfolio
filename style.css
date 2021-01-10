@@ -23,27 +23,39 @@ body {
     z-index: 300;
     border-bottom: 1px solid #444950;
 }
+
 ul {
     display: flex;
     padding: 10px 60px;
-}
+} 
 
 li{
-    list-style: none;
-    background: #313642 ;
-    text-align: center;
-    cursor: pointer;
-    padding: 0 50px;
+  list-style: none;
+  background: #313642 ;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 50px;
 }
 
 #left {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 
 li:hover {
-    filter: brightness(150%);
+  filter: brightness(150%);
 }
+
+
+@media screen and (max-width: 900px) {
+  ul {
+    padding: 10px;
+  }
+  li {
+    padding: 5px;
+  }
+}
+
 
 
 #omnie {
@@ -65,6 +77,17 @@ li:hover {
     height: fit-content;
     align-self: center;
 }
+
+@media screen and (max-width: 900px) {
+  #omnie img {
+    width: 70vw;
+    height: auto;
+  }
+  #omnie h1 {
+    padding: 0 15px;
+  }
+}
+
 
 .projekty {
     display: flex;
@@ -226,7 +249,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
   }
-  
+
   textarea:hover {
     background: #b3aca7;
     color: #e2dedb;
@@ -252,12 +275,30 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   #submit:hover {
     color: #e2dedb;
   }
-  
+  @media screen and (max-width:900px){
+    #form {
+      width: 100%;
+      padding: 0 15px;
+    }
+    input {
+      width: 300px;
+    }
+    textarea {
+      width: 300px;
+    }
+    #submit {
+      width: 332px;
+    }
+    
+  }
   .form {
     border-top: 1px solid #39393a;
     background: radial-gradient(at top, #272b31 -10%, #1b1f25 60%);
     height: 90vh;
   }
+
+
+
   footer {
       background-color: #313642;
       text-align: center;
